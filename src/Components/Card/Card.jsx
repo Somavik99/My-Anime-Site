@@ -1,11 +1,11 @@
-import React from 'react'
-
-const Card = () => {
+import React from "react";
+import "./Card.css";
+const Card = ({ image }) => {
   return (
-    <Card>
-        
+    <Card className="Card">
+      <body>{image}</body>
     </Card>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
