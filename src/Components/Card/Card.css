@@ -1,7 +1,20 @@
 .Card {
+  background: black;
   margin: 2px;
-  padding: 3px;
+  padding: 8px;
   border: 2px solid black;
   height: 300px;
   width: 200px;
+}
+
+.Card_image {
+  height: 20px;
+  transition: all 1s ease-in;
+}
+
+.Card_image:hover {
+  transform: scale(1);
+  height: fit-content;
+  z-index: 1;
+  text: hidden;
 }

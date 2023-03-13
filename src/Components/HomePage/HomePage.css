@@ -1,0 +1,7 @@
+.HomePage {
+    padding: 6%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4,1fr);
+}
