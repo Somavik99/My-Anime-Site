@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React , { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
 const HomePage = () => {
@@ -10,8 +10,8 @@ const HomePage = () => {
         "https://api.jikan.moe/v4/anime?q=One Piece, Draon Ball Super, Kimetsu No Yaiba, Bleach, Attack On Titan&sfw&limit=90"
       )
       .then((resp) => {
-        console.log(resp.data.data);
-        setHomePageState(resp.data.data);
+        console.log(resp.data);
+        setHomePageState(resp.data);
       })
       .catch((err) => {
         console.log(err);
