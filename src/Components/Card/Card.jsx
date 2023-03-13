@@ -1,11 +1,12 @@
 import "./Card.css";
 import React from "react";
-const Card = ({ image }) => {
+import { Card } from "@chakra-ui/react";
+const CardPage = ({ image }) => {
   return (
     <Card className="Card">
-      <p>{image}</p>
+     <img src={image}/>
     </Card>
   );
 };
 
-export default Card;
+export default CardPage;
