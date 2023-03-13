@@ -4,11 +4,21 @@
 }
 
 .Card {
-  background: black;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 247, 247, 1) 6%,
+    rgba(255, 255, 255, 1) 17%,
+    rgba(255, 250, 250, 1) 22%,
+    rgba(246, 244, 244, 1) 29%,
+    rgba(193, 184, 184, 1) 52%,
+    rgba(0, 0, 0, 1) 90%
+  );
   margin: 2px;
   padding: 6%;
   border: 2px solid black;
-  height: fit-content;
+  height: 400px;
   width: 200px;
   transition: 0.4s ease-in;
   position: fixed;
@@ -16,10 +26,14 @@
 
 .Card_image {
   height: fit-content;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 0.4s ease-out;
 }
 
-.Card:hover {
-  transform: scale(1.1);
-
+.Card_image:hover {
+  transform: scale(1.2);
+  border-radius: 4px;
+  box-shadow: 3.5px 3.5px 3.5px rgba(96, 94, 94, 0.51);
   z-index: 2;
 }
