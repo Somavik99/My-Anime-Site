@@ -1,11 +1,12 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
 import "./CardModal.css";
 
 const CardModal = ({
   SetIsOpen,
   imageL,
-  title_english,
-  title_japanese,
+  titleEng,
+  titleJap,
   rating,
   detail,
 }) => {
@@ -14,15 +15,24 @@ const CardModal = ({
       <div className="Modal">
         <div className="Modal_header">
           <p className="Modal_img">
-            <img src={imageL} alt={title_english} style={{ height: "290px",alignContent:"center" }} />
+            <img
+              src={imageL}
+              alt={titleEng}
+              style={{ height: "290px", alignContent: "center" }}
+            />
           </p>
-          <p>{title_english}</p>
-          <p>{title_japanese}</p>
-          <p>{rating}</p>
+          <p style={{ color: "black" }}>Title: {titleEng}</p>
+          <p>{titleJap}</p>
+          <p style={{ display: "flex", alignItems: "flex-start" }}>
+            Rating: {rating}
+            <span>
+              <FaStar />
+            </span>
+          </p>
         </div>
 
         <div>
-          <p>{detail}</p>
+          <p style={{ float: "right" }}>{detail}</p>
 
           <div className="Modal_footer">
             <button

@@ -20,16 +20,17 @@
   box-sizing: border-box;
   margin: 20%;
   padding: 2%;
-  height: 600px;
+  height: 70%;
   width: inherit;
   border: 1px solid black;
   border-radius: 8px;
 }
 
-/* .Modal_img{
-    width: 500px;
-    height:100px;
-} */
+.Modal_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .Modal_btn {
   border: 1px solid black;
