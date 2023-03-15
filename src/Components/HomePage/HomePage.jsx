@@ -32,6 +32,8 @@ const HomePage = () => {
               title_english={item.title_english}
               title_japanese={item.title_japanese}
               rating={item.score}
+              detail={item.synopsis}
+              imageL={item.images.jpg.large_image_url}
             />
           </div>
         );

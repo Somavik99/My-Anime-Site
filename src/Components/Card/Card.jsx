@@ -4,7 +4,7 @@ import { Button, Card } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
 import CardModal from "./CardModal/CardModal";
-const CardPage = ({ image, title_english, title_japanese, rating }) => {
+const CardPage = ({ image, title_english, title_japanese, rating, detail,imageL }) => {
   const [IsOpen, SetIsOpen] = useState(false);
   return (
     <div className="CardPage">
@@ -38,7 +38,17 @@ const CardPage = ({ image, title_english, title_japanese, rating }) => {
           >
             View
           </Button>
-          {IsOpen && <CardModal SetIsOpen={SetIsOpen} />}
+          {IsOpen && (
+            <CardModal
+              SetIsOpen={SetIsOpen}
+              image={image}
+              titleEng={title_english}
+              titleJap={title_japanese}
+              rating={rating}
+              detail={detail}
+              imageL={imageL}
+            />
+          )}
         </p>
       </Card>
     </div>
