@@ -15,8 +15,8 @@
 }
 
 .Modal {
-  background: white;
-  color: black;
+  background: rgba(40, 0, 0, 0.76);
+  color: rgb(255, 255, 255);
   box-sizing: border-box;
   margin: 20%;
   padding: 2%;
@@ -24,6 +24,12 @@
   width: inherit;
   border: 1px solid black;
   border-radius: 8px;
+  transition: 0.1s ease-out;
+}
+
+.Modal:hover {
+  transform: scale(1.08);
+  box-shadow: 0.8rem 0.9rem #b6b5b57e;
 }
 
 .Modal_img {
@@ -33,9 +39,21 @@
 }
 
 .Modal_btn {
-  border: 1px solid black;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.076);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background: rgba(10, 10, 10, 0.672);
   color: black;
   float: right;
+  width: 70px;
+  height: 40px;
+  margin-top: 3%;
+  color: whitesmoke;
+  transition: 0.3s ease;
+}
+
+.Modal_btn:hover {
+  transform: scale(1);
+  border: 1px solid #ef0107;
+  color: red;
+  box-shadow: 0.5rem 0.5rem rgba(255, 0, 0, 0.646);
 }

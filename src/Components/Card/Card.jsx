@@ -4,15 +4,21 @@ import { Button, Card } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
 import CardModal from "./CardModal/CardModal";
-const CardPage = ({ image, title_english, title_japanese, rating, detail,imageL }) => {
+const CardPage = ({
+  image,
+  title_english,
+  title_japanese,
+  rating,
+  detail,
+  imageL,
+}) => {
   const [IsOpen, SetIsOpen] = useState(false);
   return (
     <div className="CardPage">
       <Card
         className="Card"
         style={{
-          border: "2px solid rgba(193, 184, 184, 1) ",
-          boxShadow: "2.5px 2.5px 2.5px rgba(193, 184, 184, 1)",
+          boxShadow: "2.5px 2.5px 2.5px rgba(0,0,0, 0.5)",
         }}
       >
         <p className="Card_image">
@@ -32,7 +38,7 @@ const CardPage = ({ image, title_english, title_japanese, rating, detail,imageL 
             variant="ghost"
             leftIcon={<VscPreview />}
             style={{
-              boxShadow: "1px 1px 1px rgba(193, 184, 184, 1)",
+              boxShadow: "1px 1px 1px  black",
             }}
             onClick={() => SetIsOpen(true)}
           >

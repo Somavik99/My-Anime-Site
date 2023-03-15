@@ -32,7 +32,7 @@ const CardModal = ({
         </div>
 
         <div>
-          <p style={{ float: "right" }}>{detail}</p>
+          <p style={{ float: "right" }}><span style={{fontWeight:"bold"}}>Detail: </span>{detail}</p>
 
           <div className="Modal_footer">
             <button
