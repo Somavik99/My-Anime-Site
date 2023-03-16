@@ -57,3 +57,12 @@
   color: red;
   box-shadow: 0.5rem 0.5rem rgba(255, 0, 0, 0.646);
 }
+
+.Image_cont {
+  border: 2px solid red;
+  border-radius: 8px;
+  height: 320px;
+  width: 250px;
+  margin-left: 34%;
+  margin-bottom: 8%;
+}

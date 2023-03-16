@@ -8,5 +8,5 @@
   gap: 1;
   border-radius: 28px;
   box-shadow: 0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.456);
-  background: linear-gradient(178.6deg, rgb(20, 36, 50) 11.8%, rgb(124, 143, 161) 83.8%);
+  background: linear-gradient(178.6deg, rgba(20, 36, 50, 0.195) 11.8%, rgba(124, 143, 161, 0.195) 83.8%);
 }

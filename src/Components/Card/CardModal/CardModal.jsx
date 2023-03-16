@@ -1,3 +1,4 @@
+import { Button } from "@chakra-ui/react";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import "./CardModal.css";
@@ -14,12 +15,23 @@ const CardModal = ({
     <span className="overlay">
       <div className="Modal">
         <div className="Modal_header">
-          <p className="Modal_img">
-            <img
-              src={imageL}
-              alt={titleEng}
-              style={{ height: "290px", alignContent: "center" }}
-            />
+          <p className="Image_cont">
+            <p className="Modal_img">
+              <img
+                src={imageL}
+                alt={titleEng}
+                style={{
+                  height: "290px",
+                  alignContent: "center",
+                  margin: "5px ",
+                  padding: "5px",
+                  position:"relative"
+                }}
+              />
+            </p>
+            <p style={{marginBottom:"25px"}}>
+              <Button style={{ float:"inherit", position: "static",zIndex:"2",alignItems:"center" }}></Button>
+            </p>
           </p>
           <p style={{ color: "White" }}>Title: {titleEng}</p>
           <p>{titleJap}</p>
