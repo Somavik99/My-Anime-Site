@@ -20,7 +20,7 @@
   box-sizing: border-box;
   margin: 20%;
   padding: 2%;
-  height: 70%;
+  height: auto;
   width: inherit;
   border: 1px solid black;
   border-radius: 8px;
@@ -28,7 +28,7 @@
 }
 
 .Modal:hover {
-  transform: scale(1.08);
+  transform: scale(1);
   box-shadow: 0.8rem 0.9rem #b6b5b57e;
 }
 
