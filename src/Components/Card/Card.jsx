@@ -18,7 +18,7 @@ const CardPage = ({
       <Card
         className="Card"
         style={{
-          boxShadow: "2.5px 2.5px 2.5px rgba(0,0,0, 0.5)",
+          boxShadow: "0.5rem 0.5rem 0.8rem 0.8rem  rgba(0,0,0, 0.4)",
         }}
       >
         <p className="Card_image">
@@ -38,7 +38,7 @@ const CardPage = ({
             variant="ghost"
             leftIcon={<VscPreview />}
             style={{
-              boxShadow: "1px 1px 1px  black",
+              boxShadow: "0.3rem 0.3rem 0.3rem 0.1rem  rgba(0,0,0,0.3)",
             }}
             onClick={() => SetIsOpen(true)}
           >

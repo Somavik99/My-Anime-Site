@@ -7,16 +7,6 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 1;
   border-radius: 28px;
-  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.59);
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(245, 244, 244, 1) 6%,
-    rgba(255, 255, 255, 1) 17%,
-    rgba(255, 250, 250, 1) 22%,
-    rgba(241, 213, 213, 1) 29%,
-    rgba(233, 138, 138, 1) 49%,
-    rgba(238, 5, 5, 0.639093137254902) 90%
-  );
+  box-shadow: 0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.456);
+  background: linear-gradient(178.6deg, rgb(20, 36, 50) 11.8%, rgb(124, 143, 161) 83.8%);
 }

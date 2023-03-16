@@ -21,7 +21,7 @@ const CardModal = ({
               style={{ height: "290px", alignContent: "center" }}
             />
           </p>
-          <p style={{ color: "black" }}>Title: {titleEng}</p>
+          <p style={{ color: "White" }}>Title: {titleEng}</p>
           <p>{titleJap}</p>
           <p style={{ display: "flex", alignItems: "flex-start" }}>
             Rating: {rating}
@@ -32,7 +32,10 @@ const CardModal = ({
         </div>
 
         <div>
-          <p style={{ float: "right" }}><span style={{fontWeight:"bold"}}>Detail: </span>{detail}</p>
+          <p style={{ float: "right" }}>
+            <span style={{ fontWeight: "bold" }}>Detail: </span>
+            {detail}
+          </p>
 
           <div className="Modal_footer">
             <button
