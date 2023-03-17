@@ -47,7 +47,7 @@ const CardModal = ({
                   alignItems: "center",
                   marginLeft: "10px",
                   borderRadius: "20px",
-                  background: "rgb(0,0,0,0.7)",
+                  background: "rgb(0,0,0)",
                   border: "1px solid white",
                 }}
                 leftIcon={
