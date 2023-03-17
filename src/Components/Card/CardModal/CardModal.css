@@ -66,3 +66,14 @@
   margin-bottom: 8%;
   background: rgba(230, 61, 61, 0.381);
 }
+
+.my-tooltip-btn{
+transition: 0.4s ease-out;
+box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+z-index: 1;
+}
+
+.my-tooltip-btn:hover{
+  transform: scale(1);
+  box-shadow: 0.5rem 0.5rem rgba(0,0,0,0.5);
+}

@@ -1,9 +1,10 @@
 import { Button } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { CiPlay1 } from "react-icons/ci";
 import { Tooltip } from "react-tooltip";
 import "./CardModal.css";
+import VideoModal from "../VideoModal/VideoModal";
 
 const CardModal = ({
   SetIsOpen,
@@ -13,6 +14,11 @@ const CardModal = ({
   rating,
   detail,
 }) => {
+  const [IsOpenVideo, setIsOpenVideo] = useState(false);
+  const VideoModalBtn = () => {
+    return setIsOpenVideo(true);
+  };
+
   return (
     <span className="overlay">
       <div className="Modal">
@@ -41,23 +47,26 @@ const CardModal = ({
                   alignItems: "center",
                   marginLeft: "10px",
                   borderRadius: "20px",
-                  background: "rgb(255,255,255)",
+                  background: "rgb(0,0,0,0.7)",
+                  border: "1px solid white",
                 }}
                 leftIcon={
                   <CiPlay1
                     style={{
-                      color: "black",
+                      color: "white",
                       fontSize: "24px",
                       marginLeft: "5px",
                       marginRight: "-5px",
                     }}
                   />
                 }
-                data-tooltip-id="my-tooltip"
-                data-tooltip-content="Play Trailer"
+                className="my-tooltip-btn"
+                data-tooltip-variant="dark"
+                onClick={VideoModalBtn}
               ></Button>
+              {IsOpenVideo && <VideoModal />}
             </p>
-            <Tooltip anchorSelect="#my-tooltip" content="Play Trailer" />
+            <Tooltip anchorSelect=".my-tooltip-btn" content="Play Trailer" />
           </p>
           <p style={{ color: "White" }}>Title: {titleEng}</p>
           <p>{titleJap}</p>
