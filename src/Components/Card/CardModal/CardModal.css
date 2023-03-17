@@ -59,10 +59,10 @@
 }
 
 .Image_cont {
-  border: 2px solid red;
   border-radius: 8px;
   height: 320px;
   width: 250px;
   margin-left: 34%;
   margin-bottom: 8%;
+  background: rgba(230, 61, 61, 0.381);
 }
