@@ -19,12 +19,28 @@
   color: rgb(255, 255, 255);
   box-sizing: border-box;
   margin: 20%;
-  padding: 2%;
-  height: auto;
+  margin-bottom: 20%;
+  padding: 3%;
+  height: 700px;
   width: inherit;
   border: 1px solid black;
   border-radius: 8px;
   transition: 0.1s ease-out;
+  overflow-y: scroll;
+}
+
+.Modal::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.Modal::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 6px rgba(0, 0, 0, 0.3);
+}
+
+.Modal::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.523);
+  border-radius: 8px;
+  outline: 1px solid black;
 }
 
 .Modal:hover {
@@ -39,23 +55,24 @@
 }
 
 .Modal_btn {
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 15px;
   background: rgba(10, 10, 10, 0.672);
   color: black;
   float: right;
   width: 70px;
   height: 40px;
-  margin-top: 3%;
+  margin-bottom: 6%;
   color: whitesmoke;
   transition: 0.3s ease;
+  scroll-margin-bottom: 5%;
 }
 
 .Modal_btn:hover {
   transform: scale(1);
-  border: 1px solid #ef0107;
+  border: 3px solid #ff0008;
   color: red;
-  box-shadow: 0.5rem 0.5rem rgba(255, 0, 0, 0.646);
+  box-shadow: unset 0.5rem 0.5rem rgba(255, 0, 0, 0.646);
 }
 
 .Image_cont {
@@ -63,8 +80,9 @@
   height: 320px;
   width: 250px;
   margin-left: 34%;
-  margin-bottom: 8%;
+  margin-bottom: 2%;
   background: rgba(230, 61, 61, 0.381);
+  z-index: 2;
 }
 
 .my-tooltip-btn {

@@ -64,7 +64,9 @@ const CardModal = ({
                 data-tooltip-variant="dark"
                 onClick={VideoModalBtn}
               ></Button>
-              {IsOpenVideo && <VideoModal />}
+              {IsOpenVideo && (
+                <VideoModal titleEng={titleEng} titleJap={titleJap} />
+              )}
             </p>
             <Tooltip anchorSelect=".my-tooltip-btn" content="Play Trailer" />
           </p>
@@ -80,7 +82,7 @@ const CardModal = ({
 
         <div>
           <p style={{ float: "right" }}>
-            <span style={{ fontWeight: "bold" }}>Detail: </span>
+            <span style={{ fontWeight: "bolder" }}>Detail: </span>
             {detail}
           </p>
 
