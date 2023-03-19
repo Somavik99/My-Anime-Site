@@ -19,9 +19,8 @@
   color: rgb(255, 255, 255);
   box-sizing: border-box;
   margin: 20%;
-  margin-bottom: 20%;
   padding: 3%;
-  height: 700px;
+  height: 88%;
   width: inherit;
   border: 1px solid black;
   border-radius: 8px;
@@ -72,7 +71,7 @@
   transform: scale(1);
   border: 3px solid #ff0008;
   color: red;
-  box-shadow: unset 0.5rem 0.5rem rgba(255, 0, 0, 0.646);
+  box-shadow: 5px 5px rgba(255, 0, 0, 0.646);
 }
 
 .Image_cont {
@@ -80,7 +79,7 @@
   height: 320px;
   width: 250px;
   margin-left: 34%;
-  margin-bottom: 2%;
+  margin-bottom: 8%;
   background: rgba(230, 61, 61, 0.381);
   z-index: 2;
 }
