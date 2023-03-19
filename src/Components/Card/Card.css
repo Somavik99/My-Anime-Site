@@ -4,16 +4,20 @@
 }
 
 .Card {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 247, 247, 1) 6%,
-    rgba(255, 255, 255, 1) 17%,
-    rgba(255, 250, 250, 1) 22%,
-    rgba(246, 244, 244, 1) 29%,
-    rgba(193, 184, 184, 1) 52%,
-    rgba(0, 0, 0, 1) 90%
+  background-image: linear-gradient(
+    to right top,
+    #1d313c,
+    #1e3848,
+    #213e54,
+    #264460,
+    #2d4a6c,
+    #294a6a,
+    #264968,
+    #234966,
+    #1d4254,
+    #1f3942,
+    #223033,
+    #242727
   );
   margin: 2px;
   padding: 6%;
@@ -36,4 +40,13 @@
   border-radius: 4px;
   box-shadow: 3.5px 3.5px 3.5px rgba(96, 94, 94, 0.51);
   z-index: 2;
+}
+
+.Card_btn {
+  transition: 0.1s ease;
+}
+
+.Card_btn:hover {
+  transform: scale(1);
+  color: rgb(13, 128, 228);
 }

@@ -13,6 +13,7 @@ const CardModal = ({
   titleJap,
   rating,
   detail,
+  video,
 }) => {
   const [IsOpenVideo, setIsOpenVideo] = useState(false);
   const VideoModalBtn = () => {
@@ -64,9 +65,6 @@ const CardModal = ({
                 data-tooltip-variant="dark"
                 onClick={VideoModalBtn}
               ></Button>
-              {IsOpenVideo && (
-                <VideoModal titleEng={titleEng} titleJap={titleJap} />
-              )}
             </p>
             <Tooltip anchorSelect=".my-tooltip-btn" content="Play Trailer" />
           </p>
@@ -98,6 +96,14 @@ const CardModal = ({
           </div>
         </div>
       </div>
+      {IsOpenVideo && (
+        <VideoModal
+          titleEng={titleEng}
+          titleJap={titleJap}
+          video={video}
+          setIsOpenVideo={setIsOpenVideo}
+        />
+      )}
     </span>
   );
 };

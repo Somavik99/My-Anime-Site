@@ -34,7 +34,7 @@ const HomePage = () => {
               rating={item.score}
               detail={item.synopsis}
               imageL={item.images.jpg.large_image_url}
-              video={item.trailer.embed_url}
+              video={item.trailer.url}
             />
           </div>
         );

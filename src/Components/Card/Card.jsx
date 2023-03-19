@@ -11,6 +11,7 @@ const CardPage = ({
   rating,
   detail,
   imageL,
+  video,
 }) => {
   const [IsOpen, SetIsOpen] = useState(false);
   return (
@@ -18,6 +19,8 @@ const CardPage = ({
       <Card
         className="Card"
         style={{
+          // background: "black",
+          color: "whitesmoke",
           boxShadow: "0.5rem 0.5rem 0.8rem 0.8rem  rgba(0,0,0, 0.3)",
         }}
       >
@@ -25,7 +28,7 @@ const CardPage = ({
           <img src={image} style={{ borderRadius: "4px" }} />
         </p>
 
-        <p style={{ color: "black", overflow: "hidden" }}>
+        <p style={{ color: "whitesmoke", overflow: "hidden" }}>
           <span>Title: {title_english}</span>
           <span className="jap_title">{title_japanese}</span>
         </p>
@@ -39,9 +42,10 @@ const CardPage = ({
             leftIcon={<VscPreview />}
             style={{
               boxShadow: "0.3rem 0.3rem 0.3rem 0.1rem  rgba(0,0,0,0.3)",
-              float:"inline-end"
+              float: "inline-end",
             }}
             onClick={() => SetIsOpen(true)}
+            className="Card_btn"
           >
             View
           </Button>
@@ -54,6 +58,7 @@ const CardPage = ({
               rating={rating}
               detail={detail}
               imageL={imageL}
+              video={video}
             />
           )}
         </p>
