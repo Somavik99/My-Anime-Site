@@ -25,7 +25,9 @@ const HomePage = () => {
 
   return (
     <div className="HomePage">
-      <HomeFilter HomePageState={HomePageState} />
+      <h1>
+        <HomeFilter HomePageState={HomePageState} />
+      </h1>
       {HomePageState.map((item, index) => {
         return (
           <div key={index} className="Homepage_Card">
