@@ -8,7 +8,7 @@
   grid-template-rows: repeat(4, 1fr);
   gap: 1;
   border-radius: 5px;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0,0.656);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.656);
   background: linear-gradient(
     178.6deg,
     rgba(20, 36, 50, 0.195) 11.8%,
@@ -34,5 +34,15 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .HomePage {
+    transform: scale(1);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

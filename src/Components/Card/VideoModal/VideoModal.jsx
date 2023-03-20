@@ -10,7 +10,11 @@ const VideoModal = ({ titleEng, titleJap, video, setIsOpenVideo }) => {
   return (
     <div className="overlay">
       <div className="Video_container">
-        <Button leftIcon={<GrClose />} onClick={CloseModal} style={{float:"right"}}></Button>
+        <Button
+          leftIcon={<GrClose />}
+          onClick={CloseModal}
+          style={{ float: "right" }}
+        ></Button>
         <h1>
           Title: <h2>{titleEng}</h2>
           <h2>{titleJap}</h2>

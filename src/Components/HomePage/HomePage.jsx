@@ -7,7 +7,7 @@ const HomePage = () => {
   const HomePageApi = async () => {
     await axios
       .get(
-        "https://api.jikan.moe/v4/anime?q=One Piece, Boku no hero academia, Dragon-ball super, Singeki no kyiogin, Nanatsu no taizai&sfw?limit=100"
+        "https://api.jikan.moe/v4/anime?q=One Piece, Boku no hero academia, Dragon-ball super, Singeki no kyiogin, Nanatsu no taizai&sfw"
       )
       .then((resp) => {
         console.log(resp.data.data);
@@ -34,7 +34,7 @@ const HomePage = () => {
               rating={item.score}
               detail={item.synopsis}
               imageL={item.images.jpg.large_image_url}
-              video={item.trailer.url}
+              video={item.url}
             />
           </div>
         );
