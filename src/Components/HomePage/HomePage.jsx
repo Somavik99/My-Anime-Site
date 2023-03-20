@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CardPage from "../Card/Card";
+import HomeFilter from "./HomeFilter/HomeFilter";
 import "./HomePage.css";
 const HomePage = () => {
   const [HomePageState, setHomePageState] = useState([]);
@@ -24,6 +25,7 @@ const HomePage = () => {
 
   return (
     <div className="HomePage">
+      <HomeFilter HomePageState={HomePageState} />
       {HomePageState.map((item, index) => {
         return (
           <div key={index} className="Homepage_Card">
