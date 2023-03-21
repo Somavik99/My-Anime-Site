@@ -3,7 +3,7 @@ import "./HomeFilter.css";
 
 const HomeFilter = ({ HomePageState }) => {
   return <div className="HomeFilter">
-
+HomePage
   </div>;
 };
 

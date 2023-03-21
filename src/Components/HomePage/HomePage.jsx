@@ -24,10 +24,11 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="HomePage">
+    <>
       <h1>
         <HomeFilter HomePageState={HomePageState} />
       </h1>
+    <div className="HomePage">
       {HomePageState.map((item, index) => {
         return (
           <div key={index} className="Homepage_Card">
@@ -44,6 +45,7 @@ const HomePage = () => {
         );
       })}
     </div>
+    </>
   );
 };
 

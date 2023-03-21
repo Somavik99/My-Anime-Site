@@ -93,4 +93,5 @@
 .my-tooltip-btn:hover {
   transform: scale(1);
   box-shadow: 0.5rem 0.5rem rgba(255, 255, 255, 0.5);
+  border: 0.1rem solid whitesmoke;
 }

@@ -86,7 +86,7 @@ const CardModal = ({
 
           <div className="Modal_footer">
             <button
-            style={{marginBottom:"2%"}}
+              style={{ marginBottom: "2%" }}
               onClick={() => {
                 SetIsOpen(false);
               }}
