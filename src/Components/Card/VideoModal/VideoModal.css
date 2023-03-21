@@ -14,12 +14,12 @@
   cursor: pointer;
 }
 
-.Video_container{
-    margin: 5%;
-    padding: 0.5rem;
-    border: 1px solid black;
-    color: black;
-    background: white;
-    width: 500px;
-    height: 600px;
+.Video_container {
+  margin: 5%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  color: #000000;
+  background: white;
+  width: 500px;
+  height: 600px;
 }
