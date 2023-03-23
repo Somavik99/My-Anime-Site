@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/react";
+import { AspectRatio } from "@chakra-ui/react";
 import React from "react";
 import "./VideoModal.css";
 import { GrClose } from "react-icons/gr";
@@ -20,7 +21,9 @@ const VideoModal = ({ titleEng, titleJap, video, setIsOpenVideo }) => {
           <h2>{titleJap}</h2>
         </h1>
         <div>
-          <video src={video} controls />
+          <AspectRatio maxW="560px" ratio={1}>
+            <iframe title="naruto" src={video} allowFullScreen />
+          </AspectRatio>
         </div>
       </div>
     </div>
